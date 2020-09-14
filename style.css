@@ -1,10 +1,5 @@
 body {
   background-color: rgb(26, 100, 143);
-  /* -moz-user-select: none;
-  -khtml-user-select: none;
-  -webkit-user-select: none; */
-  /* position: relative;
-  left: 50vh; */
   font-family: "Kelly Slab", cursive;
 }
 
@@ -142,6 +137,10 @@ body {
   /* position: absolute; */
   overflow: hidden;
   z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .displayContainer {
@@ -153,7 +152,8 @@ body {
   border-width: 3px;
   border-color: darkgray;
   text-align: center;
-  overflow: hidden;
+  position: relative;
+  /* overflow: hidden; */
 }
 
 #topDisplay {
@@ -161,9 +161,10 @@ body {
   height: 13vh; */
   /* max-width: 655px; */
   /* vertical-align: middle; */
-  /* position: absolute;
-  top: 1vh;
-  left: 1.5vw; */
+  position: absolute;
+  z-index: 1;
+  /* top: 1vh;
+  left: 1.5vw;  */
   animation-name: topDisplayAni;
   animation-iteration-count: infinite;
   animation-duration: 5s;
@@ -176,9 +177,14 @@ body {
   font-weight: 500;
   font-size: 3em;
   line-height: 13vh;
-  /* overflow: hidden; */
-  /* position: absolute;
-  top: 1vh;
+  overflow: hidden;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  z-index: 2;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  /* top: 1vh;
   left: 1.5vw; */
 }
 
@@ -195,9 +201,7 @@ body {
   text-align: center;
   background-image: radial-gradient(rgb(21, 4, 173), rgb(26, 24, 24));
   position: relative;
-  left: 40%;
   max-width: 130px;
-  top: 86vh;
   overflow: hidden;
 }
 
