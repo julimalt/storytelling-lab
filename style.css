@@ -1,20 +1,25 @@
 body {
   background-color: rgb(26, 100, 143);
-  -moz-user-select: none;
+  /* -moz-user-select: none;
   -khtml-user-select: none;
-  -webkit-user-select: none;
-  position: relative;
-  left: 50vh;
+  -webkit-user-select: none; */
+  /* position: relative;
+  left: 50vh; */
   font-family: "Kelly Slab", cursive;
 }
 
+.juego {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .reels {
   position: absolute;
   display: block;
   height: 68vh;
   width: 78.5vw;
-  left: 1.5vw;
-  top: 17vh;
+  /* left: 1.5vw;
+  top: 17vh; */
   max-width: 700px;
   max-height: 800px;
   z-index: 2;
@@ -134,46 +139,47 @@ body {
     rgba(36, 36, 36, 0.801)
   );
   border-color: blue;
-  position: absolute;
+  /* position: absolute; */
   overflow: hidden;
   z-index: 1;
 }
 
-#topDisplay {
-  width: 72vw;
-  height: 13vh;
-  max-width: 655px;
+.displayContainer {
+  width: 74vw;
+  height: 14vh;
+  max-width: 661px;
   background-color: black;
-  vertical-align: middle;
   border-style: double;
   border-width: 3px;
   border-color: darkgray;
-  overflow: hidden;
   text-align: center;
-  text-transform: uppercase;
-  position: absolute;
+  overflow: hidden;
+}
+
+#topDisplay {
+  /* width: 72vw;
+  height: 13vh; */
+  /* max-width: 655px; */
+  /* vertical-align: middle; */
+  /* position: absolute;
   top: 1vh;
-  left: 1.5vw;
+  left: 1.5vw; */
   animation-name: topDisplayAni;
   animation-iteration-count: infinite;
   animation-duration: 5s;
 }
 
 #topDisplayGlass {
-  width: 74vw;
-  height: 14vh;
-  max-width: 661px;
   background-color: rgba(33, 33, 33, 0.452);
   color: white;
   text-transform: uppercase;
   font-weight: 500;
   font-size: 3em;
   line-height: 13vh;
-  overflow: hidden;
-  text-align: center;
-  position: absolute;
+  /* overflow: hidden; */
+  /* position: absolute;
   top: 1vh;
-  left: 1.5vw;
+  left: 1.5vw; */
 }
 
 #spin {
@@ -229,45 +235,18 @@ body {
   left: 89.7%;
   overflow: hidden;
 }
-/*@keyframes reel1ColorChange {
-    0% {background-image:linear-gradient(to right, white, thistle)}
-    25% {background-image:linear-gradient(to right, lightcoral, lightgray)}
-    50% {background-image:linear-gradient(to right, palegoldenrod, aqua)}
-    75% {background-image:linear-gradient(to right, white, tan)}
-    100% {background-image:linear-gradient(to right, white, thistle)}
+@media screen and (min-width: 300px) and (max-width: 600px) {
+  /* .machine {
+    height: 90vh;
+    width: 80vw;
+    max-width: 700px;
+    max-height: 800px;
   }
-  
-  @keyframes reel2ColorChange {
-    0% {background-image:linear-gradient(to right, thistle, lightcoral)}
-    25% {background-image:linear-gradient(to right, lightgray, palegoldenrod)}
-    50% {background-image:linear-gradient(to right, aqua, white)}
-    75% {background-image:linear-gradient(to right, tan, white)}
-    100% {background-image:linear-gradient(to right, thistle, lightcoral)}
-  }
-  
-  @keyframes reel3ColorChange {
-    0% {background-image:linear-gradient(to right, lightcoral, lightgray)}
-    25% {background-image:linear-gradient(to right, palegoldenrod, aqua)}
-    50% {background-image:linear-gradient(to right, white, tan)}
-    75% {background-image:linear-gradient(to right, white, thistle)}
-    100% {background-image:linear-gradient(to right, lightcoral, lightgray)}
-  }
-  
-  @keyframes reel4ColorChange {
-    0% {background-image:linear-gradient(to right, lightgray, palegoldenrod)}
-    25% {background-image:linear-gradient(to right, aqua, white)}
-    50% {background-image:linear-gradient(to right, tan, white)}
-    75% {background-image:linear-gradient(to right, thistle, lightcoral)}
-    100% {background-image:linear-gradient(to right, lightgray, palegoldenrod)}
-  }
-  
-  @keyframes reel5ColorChange {
-    0% {background-image:linear-gradient(to right, palegoldenrod, aqua)}
-    25% {background-image:linear-gradient(to right, white, tan)}
-    50% {background-image:linear-gradient(to right, white, thistle)}
-    75% {background-image:linear-gradient(to right, lightcoral, lightgray)}
-    100% {background-image:linear-gradient(to right, palegoldenrod, aqua)}
-  }*/
+  .juego {
+    height: 50vh;
+    width: 50vw;
+  } */
+}
 
 @keyframes topDisplayAni {
   0% {
