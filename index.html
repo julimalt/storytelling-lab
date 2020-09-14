@@ -1,39 +1,48 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Storytelling Lab</title>
     <link rel="shortcut icon" href="chemistry.png" />
-    <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="style.css" rel="stylesheet" type="text/css" />
     <script type="text/javascript" src="functions.js"></script>
     <style>
-      @import url('https://fonts.googleapis.com/css2?family=Kelly+Slab&display=swap');
-      </style>
-
+      @import url("https://fonts.googleapis.com/css2?family=Kelly+Slab&display=swap");
+    </style>
   </head>
-  <body scroll="no" style="margin:0; overflow:hidden;">
+  <body>
     <div class="juego">
-     <span class="reels">
-       <div id="reel1">👮🏼‍♂️‍</br>👨🏼‍⚕️</br>👨🏼‍🏫</br>👷🏼‍♂️</br>👨🏼‍🌾</br>👨🏼‍🍳</br>👨🏼‍💻</br>👨🏼‍🔬</br>👨🏼‍🚀</br>👨🏼‍🚒</br>🤹🏼‍♂️</br>👮🏼‍♂️‍</br>👨🏼‍⚕️</br>👨🏼‍🏫</br>👷🏼‍♂️</br>👨🏼‍🌾</br>👨🏼‍🍳</br>👨🏼‍💻</br>👨🏼‍🔬</br>👨🏼‍🚀</br>👨🏼‍🚒</br>🤹🏼‍♂️</br>👮🏼‍♂️‍</br>👨🏼‍⚕️</br>👨🏼‍🏫</br>👷🏼‍♂️</br>👨🏼‍🌾</br>👨🏼‍🍳</br>👨🏼‍💻</br>👨🏼‍🔬</br>👨🏼‍🚀</br>👨🏼‍🚒</br>🤹🏼‍♂️</div>
-       <div id="reel2">🖱</br>💻</br>🏆</br>⚽</br>🎲</br>🎭</br>🧵</br>💄</br>🔑</br>🎤</br>🎧<br>🖱</br>💻</br>🏆</br>⚽</br>🎲</br>🎭</br>🧵</br>💄</br>🔑</br>🎤</br>🎧</br>🖱</br>💻</br>🏆</br>⚽</br>🎲</br>🎭</br>🧵</br>💄</br>🔑</br>🎤</br>🎧</div>
-       <div id="reel3">🚊</br>✈</br>🏝</br>&#x1f30b</br>&#x26fa</br>🏖</br>🏜</br>🏡</br>🚽</br>🏥</br>⛽</br>🚊</br>✈</br>🏝</br>&#x1f30b</br>&#x26fa</br>🏖</br>🏜</br>🏡</br>🚽</br>🏥</br>⛽</br>🚊</br>✈</br>🏝</br>&#x1f30b</br>&#x26fa</br>🏖</br>🏜</br>🏡</br>🚽</br>🏥</br>⛽</div>
-       <div id="reel4">👪</br>👨‍👩‍👧‍👦</br>👨‍👧</br>👨‍👩‍👦</br>👨‍👩‍👧‍👦</br>👨‍👧</br>👪</br>👨‍👩‍👧‍👦</br>👨‍👧</br>👨‍👩‍👦</br>👨‍👩‍👧‍👦</br>👪</br>👨‍👩‍👧‍👦</br>👨‍👧</br>👨‍👩‍👦</br>👨‍👩‍👧‍👦</br>👨‍👧</br>👪</br>👨‍👩‍👧‍👦</br>👨‍👧</br>👨‍👩‍👦</br>👨‍👩‍👧‍👦</br>👪</br>👨‍👩‍👧‍👦</br>👨‍👧</br>👨‍👩‍👦</br>👨‍👩‍👧‍👦</br>👨‍👧</br>👪</br>👨‍👩‍👧‍👦</br>👨‍👧</br>👨‍👩‍👦</br>👨‍👩‍👧‍👦</br>👨‍👧</div>
-       <div id="reel5">🚗</br>🚓</br>🚕</br>🚑</br>🚒</br>🚲</br>🛵</br>🪂</br>🚁</br>🚀</br>🛹</br>🚗</br>🚓</br>🚕</br>🚑</br>🚒</br>🚲</br>🛵</br>🪂</br>🚁</br>🚀</br>🛹</br>🚗</br>🚓</br>🚕</br>🚑</br>🚒</br>🚲</br>🛵</br>🪂</br>🚁</br>🚀</br>🛹</div>
-       <div id="reelSideLeft"></br>▶</br></div>
-       <div id="reelSideRight"></br>◀</br></div>
-       <div id="reelTop"></div>
-       <div id="reelBottom"></div>
-     </span>
-     <span class="machine">
-       <div class="displayContainer">
-        <div id="topDisplay"> ⚗⚗🧪🧪🧫🧫🧬🧬💉💉🔬🔬💊💊🩹🩹⚗⚗🧪🧪🧫🧫🧬🧬💉💉🔬🔬💊💊🩹🩹⚗⚗🧪🧪🧫🧫🧬🧬💉💉🔬🔬💊💊🩹🩹⚗⚗🧪🧪🧫🧫🧬🧬💉💉🔬🔬💊💊🩹🩹⚗⚗🧪🧪🧫🧫🧬🧬💉💉🔬🔬💊💊🩹🩹⚗⚗🧪🧪🧫🧫🧬🧬💉💉🔬🔬💊💊🩹🩹⚗⚗🧪🧪🧫🧫🧬🧬💉💉🔬🔬💊💊🩹🩹⚗⚗🧪🧪🧫🧫🧬🧬💉💉🔬🔬💊💊🩹🩹</div>
-        <h1 id="topDisplayGlass">Storytelling Lab</h1>
-       </div>
-         <button id="spin"
-         type="button"
-         onclick= "spinTheReels()">Girar</button>
-     </span>
+      <span class="reels">
+        <div id="reel1">
+          👮🏼‍♂️‍<br />👨🏼‍⚕️<br />👨🏼‍🏫<br />👷🏼‍♂️<br />👨🏼‍🌾<br />👨🏼‍🍳<br />👨🏼‍💻<br />👨🏼‍🔬<br />👨🏼‍🚀<br />👨🏼‍🚒<br />🤹🏼‍♂️<br />👮🏼‍♂️‍<br />👨🏼‍⚕️<br />👨🏼‍🏫<br />👷🏼‍♂️<br />👨🏼‍🌾<br />👨🏼‍🍳<br />👨🏼‍💻<br />👨🏼‍🔬<br />👨🏼‍🚀<br />👨🏼‍🚒<br />🤹🏼‍♂️<br />👮🏼‍♂️‍<br />👨🏼‍⚕️<br />👨🏼‍🏫<br />👷🏼‍♂️<br />👨🏼‍🌾<br />👨🏼‍🍳<br />👨🏼‍💻<br />👨🏼‍🔬<br />👨🏼‍🚀<br />👨🏼‍🚒<br />🤹🏼‍♂️
+        </div>
+        <div id="reel2">
+          🖱<br />💻<br />🏆<br />⚽<br />🎲<br />🎭<br />🧵<br />💄<br />🔑<br />🎤<br />🎧<br />🖱<br />💻<br />🏆<br />⚽<br />🎲<br />🎭<br />🧵<br />💄<br />🔑<br />🎤<br />🎧<br />🖱<br />💻<br />🏆<br />⚽<br />🎲<br />🎭<br />🧵<br />💄<br />🔑<br />🎤<br />🎧
+        </div>
+        <div id="reel3">
+          🚊<br />✈<br />🏝<br />🏖<br />🏜<br />🏡<br />🚽<br />🏥<br />⛽<br />🚊<br />✈<br />🏝<br />🏖<br />🏜<br />🏡<br />🚽<br />🏥<br />⛽<br />🚊<br />✈<br />🏝<br />🏖<br />🏜<br />🏡<br />🚽<br />🏥<br />⛽
+        </div>
+        <div id="reel4">
+          👪<br />👨‍👩‍👧‍👦<br />👨‍👧<br />👨‍👩‍👦<br />👨‍👩‍👧‍👦<br />👨‍👧<br />👪<br />👨‍👩‍👧‍👦<br />👨‍👧<br />👨‍👩‍👦<br />👨‍👩‍👧‍👦<br />👪<br />👨‍👩‍👧‍👦<br />👨‍👧<br />👨‍👩‍👦<br />👨‍👩‍👧‍👦<br />👨‍👧<br />👪<br />👨‍👩‍👧‍👦<br />👨‍👧<br />👨‍👩‍👦<br />👨‍👩‍👧‍👦<br />👪<br />👨‍👩‍👧‍👦<br />👨‍👧<br />👨‍👩‍👦<br />👨‍👩‍👧‍👦<br />👨‍👧<br />👪<br />👨‍👩‍👧‍👦<br />👨‍👧<br />👨‍👩‍👦<br />👨‍👩‍👧‍👦<br />👨‍👧
+        </div>
+        <div id="reel5">
+          🚗<br />🚓<br />🚕<br />🚑<br />🚒<br />🚲<br />🛵<br />🪂<br />🚁<br />🚀<br />🛹<br />🚗<br />🚓<br />🚕<br />🚑<br />🚒<br />🚲<br />🛵<br />🪂<br />🚁<br />🚀<br />🛹<br />🚗<br />🚓<br />🚕<br />🚑<br />🚒<br />🚲<br />🛵<br />🪂<br />🚁<br />🚀<br />🛹
+        </div>
+        <div id="reelSideLeft"><br />▶<br /></div>
+        <div id="reelSideRight"><br />◀<br /></div>
+        <div id="reelTop"></div>
+        <div id="reelBottom"></div>
+      </span>
+      <span class="machine">
+        <div class="displayContainer">
+          <div id="topDisplay">
+            ⚗⚗🧪🧪🧫🧫🧬🧬💉💉🔬🔬💊💊🩹🩹⚗⚗🧪🧪🧫🧫🧬🧬💉💉🔬🔬💊💊🩹🩹⚗⚗🧪🧪🧫🧫🧬🧬💉💉🔬🔬💊💊🩹🩹⚗⚗🧪🧪🧫🧫🧬🧬💉💉🔬🔬💊💊🩹🩹⚗⚗🧪🧪🧫🧫🧬🧬💉💉🔬🔬💊💊🩹🩹⚗⚗🧪🧪🧫🧫🧬🧬💉💉🔬🔬💊💊🩹🩹⚗⚗🧪🧪🧫🧫🧬🧬💉💉🔬🔬💊💊🩹🩹⚗⚗🧪🧪🧫🧫🧬🧬💉💉🔬🔬💊💊🩹🩹
+          </div>
+          <h1 id="topDisplayGlass">Storytelling Lab</h1>
+        </div>
+        <button id="spin" type="button" onclick="spinTheReels()">Girar</button>
+      </span>
     </div>
   </body>
 </html>

@@ -1,6 +1,8 @@
 body {
   background-color: rgb(26, 100, 143);
   font-family: "Kelly Slab", cursive;
+  overflow-y: hidden;
+  margin: 0 auto;
 }
 
 .juego {
@@ -30,7 +32,7 @@ body {
   border-left: 0.1vw solid black;
   text-align: center;
   background-color: thistle;
-  line-height: 17vh;
+  line-height: 17.5vh;
   font-size: 300%;
   position: absolute;
   left: 4%;
@@ -46,7 +48,7 @@ body {
   border-left: 0.1vw solid black;
   text-align: center;
   background-color: lightblue;
-  line-height: 17vh;
+  line-height: 17.5vh;
   font-size: 300%;
   position: absolute;
   left: 21%;
@@ -62,7 +64,7 @@ body {
   border-left: 0.1vw solid black;
   text-align: center;
   background-color: lightgray;
-  line-height: 17vh;
+  line-height: 17.5vh;
   font-size: 300%;
   position: absolute;
   left: 38%;
@@ -78,7 +80,7 @@ body {
   text-align: center;
   border-left: 0.1vw solid black;
   background-color: palegoldenrod;
-  line-height: 17vh;
+  line-height: 17.5vh;
   font-size: 300%;
   position: absolute;
   left: 55%;
@@ -94,7 +96,7 @@ body {
   border-left: 0.1vw solid black;
   text-align: center;
   background-color: tan;
-  line-height: 17vh;
+  line-height: 17.5vh;
   font-size: 300%;
   position: absolute;
   left: 72%;
