@@ -1,140 +1,27 @@
 const spinTheReels = () => {
   console.log("girar");
-  //Spin The Reels - Where will the reels land?
-  //   var resultArray = [
-  //     "lose",
-  //     "lose",
-  //     "lose",
-  //     "lose",
-  //     "lose",
-  //     "lose",
-  //     "lose",
-  //     "lose",
-  //     "lose",
-  //     "lose",
-  //     "lose",
-  //     "lose",
-  //     "lose",
-  //     "lose",
-  //     "lose",
-  //     "lose",
-  //     "lose",
-  //     "lose",
-  //     "lose",
-  //     "lose",
-  //     "fullDiamonds",
-  //     "fullDollarSign",
-  //     "line1Toilet",
-  //     "line2Poop",
-  //     "line3Bags",
-  //     "line4Angry",
-  //     "lose",
-  //     "lose",
-  //     "lose",
-  //     "lose",
-  //     "lose",
-  //     "lose",
-  //     "lose",
-  //     "lose",
-  //     "lose",
-  //     "lose",
-  //     "lose",
-  //     "lose",
-  //     "lose",
-  //     "line1Toilet",
-  //     "line1Toilet",
-  //     "line3Bags",
-  //     "line3Bags",
-  //     "line4Angry",
-  //     "lose",
-  //   ];
-  //   var randResult = resultArray[Math.floor(Math.random() * resultArray.length)];
 
-  //   switch (randResult) {
-  //     case "fullDollarSign":
-  //       rand1 = -660;
-  //       rand2 = -660;
-  //       rand3 = -660;
-  //       rand4 = -660;
-  //       rand5 = -660;
-  //       break;
-  //     case "fullDiamonds":
-  //       rand1 = -457.5;
-  //       rand2 = -457.5;
-  //       rand3 = -457.5;
-  //       rand4 = -457.5;
-  //       rand5 = -457.5;
-  //       var winResult = "fullDiamonds";
-  //       break;
-  //     case "line1Toilet":
-  //       rand1 = -50;
-  //       rand2 = -85;
-  //       rand3 = -135;
-  //       rand4 = -170;
-  //       rand5 = -220;
-  //       break;
-  //     case "line2Poop":
-  //       rand1 = -220;
-  //       rand2 = -255;
-  //       rand3 = -305;
-  //       rand4 = -355;
-  //       rand5 = -390;
-  //       break;
-  //     case "line3Bags":
-  //       rand1 = -390;
-  //       rand2 = -595;
-  //       rand3 = -50;
-  //       rand4 = -510;
-  //       rand5 = -560;
-  //       break;
-  //     case "line4Angry":
-  //       rand1 = -85;
-  //       rand2 = -390;
-  //       rand3 = -48.5;
-  //       rand4 = -85;
-  //       rand5 = -85;
-  //       break;
-  //     case "lose":
-  //       rand1 = Math.floor(Math.random() * -700);
-  //       rand2 = Math.floor(Math.random() * -700);
-  //       rand3 = Math.floor(Math.random() * -700);
-  //       rand4 = Math.floor(Math.random() * -700);
-  //       rand5 = Math.floor(Math.random() * -700);
-  //       break;
-  //     default:
-  //       rand1 = -5;
-  //       rand2 = -10;
-  //       rand3 = -15;
-  //       rand4 = -20;
-  //       rand5 = -25;
-  //       break;
-  //   }
-
-  //   rand1;
-  //   rand2;
-  //   rand3;
-  //   rand4;
-  //   rand5;
-
-  //Spin The Reels - How do they spin??
-  //////////////////////////////////////////////////////////////////
-
-  const spinner1 = document.getElementById("reel1");
-  const spinner2 = document.getElementById("reel2");
-  const spinner3 = document.getElementById("reel3");
-  const spinner4 = document.getElementById("reel4");
-  const spinner5 = document.getElementById("reel5");
+  let spinner1 = document.getElementById("reel1");
+  let spinner2 = document.getElementById("reel2");
+  let spinner3 = document.getElementById("reel3");
+  let spinner4 = document.getElementById("reel4");
+  let spinner5 = document.getElementById("reel5");
   let pos1 = -10;
   let pos2 = -5;
   let pos3 = -25;
   let pos4 = -35;
   let pos5 = -15;
 
-  const resultado1 = obtenerNumeroRandom();
-  const resultado2 = obtenerNumeroRandom();
-  const resultado3 = obtenerNumeroRandom();
-  const resultado4 = obtenerNumeroRandom();
-  const resultado5 = obtenerNumeroRandom();
+  let resultado1 = obtenerNumeroRandom();
+  let resultado2 = obtenerNumeroRandom();
+  let resultado3 = obtenerNumeroRandom();
+  let resultado4 = obtenerNumeroRandom();
+  let resultado5 = obtenerNumeroRandom();
+  console.log("resultado ", resultado1);
+  console.log("resultado ", resultado2);
+  console.log("resultado ", resultado3);
+  console.log("resultado ", resultado4);
+  console.log("resultado ", resultado5);
 
   let id1 = setInterval(row1, 1);
   let id2 = setInterval(row2, 1);
