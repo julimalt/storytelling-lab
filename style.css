@@ -202,11 +202,11 @@ body {
     font-size: 2em;
   }
   #spin {
-    font-size: 1em;
+    font-size: 0.8em;
     /* font size height and width */
   }
   #topDisplayGlass {
-    font-size: 1.8em;
+    font-size: 1.5em;
   }
 }
 
