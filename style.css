@@ -8,11 +8,12 @@ body {
 .juego {
   display: flex;
   align-items: center;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 .reels {
-  position: absolute;
+  /* position: absolute; */
   display: block;
   height: 68vh;
   width: 78.5vw;
@@ -27,74 +28,41 @@ body {
   flex-direction: row;
   justify-content: center;
 }
-
-#reel1 {
+.rueda {
   height: 800vh;
   width: 14vw;
   max-width: 130px;
   border-left: 0.1vw solid black;
   text-align: center;
-  background-color: thistle;
-  line-height: 17.5vh;
+  line-height: 17vh;
   font-size: 300%;
+  position: relative;
   top: -85vh;
   overflow: hidden;
+}
+
+#reel1 {
+  background-color: thistle;
   animation: reel1ColorChange 10s infinite;
 }
 
 #reel2 {
-  height: 800vh;
-  width: 14vw;
-  max-width: 130px;
-  border-left: 0.1vw solid black;
-  text-align: center;
   background-color: lightblue;
-  line-height: 17.5vh;
-  font-size: 300%;
-  top: -85vh;
-  overflow: hidden;
   animation: reel2ColorChange 10s infinite;
 }
 
 #reel3 {
-  height: 800vh;
-  width: 14vw;
-  max-width: 130px;
-  border-left: 0.1vw solid black;
-  text-align: center;
   background-color: lightgray;
-  line-height: 17.5vh;
-  font-size: 300%;
-  top: -50vh;
-  overflow: hidden;
   animation: reel3ColorChange 10s infinite;
 }
 
 #reel4 {
-  height: 800vh;
-  width: 14vw;
-  max-width: 130px;
-  text-align: center;
-  border-left: 0.1vw solid black;
   background-color: palegoldenrod;
-  line-height: 17.5vh;
-  font-size: 300%;
-  top: -85vh;
-  overflow: hidden;
   animation: reel4ColorChange 10s infinite;
 }
 
 #reel5 {
-  height: 800vh;
-  width: 14vw;
-  max-width: 130px;
-  border-left: 0.1vw solid black;
-  text-align: center;
   background-color: tan;
-  line-height: 17.5vh;
-  font-size: 300%;
-  top: -50vh;
-  overflow: hidden;
   animation: reel5ColorChange 10s infinite;
 }
 
@@ -103,8 +71,8 @@ body {
   height: 1vh;
   max-width: 700px;
   background-color: rgb(70, 69, 69);
-  position: absolute;
-  top: 0px;
+  /* position: absolute; */
+  /* top: 0px; */
 }
 
 #reelBottom {
@@ -112,8 +80,8 @@ body {
   height: 1vh;
   max-width: 700px;
   background-color: rgb(70, 69, 69);
-  position: absolute;
-  top: 67vh;
+  /* position: absolute; */
+  /* top: 67vh; */
 }
 
 .machine {
@@ -230,16 +198,16 @@ body {
   overflow: hidden;
 }
 @media screen and (min-width: 300px) and (max-width: 600px) {
-  /* .machine {
-    height: 90vh;
-    width: 80vw;
-    max-width: 700px;
-    max-height: 800px;
+  .rueda {
+    font-size: 2em;
   }
-  .juego {
-    height: 50vh;
-    width: 50vw;
-  } */
+  #spin {
+    font-size: 1em;
+    /* font size height and width */
+  }
+  #topDisplayGlass {
+    font-size: 1.8em;
+  }
 }
 
 @keyframes topDisplayAni {
