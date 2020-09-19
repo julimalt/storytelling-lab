@@ -1,6 +1,6 @@
 body {
-  background-color: rgb(26, 100, 143);
-  font-family: "Kelly Slab", cursive;
+  background-image: linear-gradient(to top, #88d3ce 0%, #6e45e2 100%);
+  font-family: "Kaushan Script", cursive;
   overflow-y: hidden;
   margin: 0 auto;
 }
@@ -119,9 +119,12 @@ body {
 }
 
 #topDisplay {
-  /* width: 72vw;
-  height: 13vh; */
-  /* max-width: 655px; */
+  width: 75vw;
+  height: 14vh;
+  max-width: 660px;
+  margin: 0% auto;
+  color: #1e1f20;
+  font-size: 1.2em;
   /* vertical-align: middle; */
   position: absolute;
   z-index: 1;
@@ -132,11 +135,10 @@ body {
   animation-duration: 5s;
 }
 
-#topDisplayGlass {
-  background-color: rgba(33, 33, 33, 0.452);
-  color: white;
+/* #topDisplayGlass {
+  background-color: #30303100;
+  color: rgb(206, 166, 166);
   text-transform: uppercase;
-  font-weight: 500;
   font-size: 3em;
   line-height: 13vh;
   overflow: hidden;
@@ -146,22 +148,21 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
-  /* top: 1vh;
-  left: 1.5vw; */
-}
+} */
 
 #spin {
   height: 10vh;
   width: 17vw;
-  border-color: black;
+  border-color: rgb(47, 5, 102);
+  border-color: darkslateblue;
   border-radius: 6%;
-  color: white;
-  box-shadow: 0px 15px 10px black;
+  border-width: thick;
+  color: rgb(255, 255, 255);
   font-family: courier;
   font-weight: bold;
   font-size: 120%;
   text-align: center;
-  background-image: radial-gradient(rgb(21, 4, 173), rgb(26, 24, 24));
+  background-color: #3610c08e;
   position: relative;
   max-width: 130px;
   overflow: hidden;
@@ -205,30 +206,32 @@ body {
     font-size: 0.8em;
     /* font size height and width */
   }
-  #topDisplayGlass {
-    font-size: 1.5em;
+  #topDisplay {
+    font-size: 0.8em;
   }
 }
 
 @keyframes topDisplayAni {
   0% {
     background-image: linear-gradient(
-      to right,
-      rgb(46, 45, 45),
-      rgb(255, 0, 255)
+      -20deg,
+      #ddd6f3 0%,
+      #faaca8 100%,
+      #faaca8 100%
     );
   }
   33% {
-    background-image: linear-gradient(to right, rgb(132, 0, 255), darkgray);
+    background-image: linear-gradient(60deg, #64b3f4 0%, #c2e59c 100%);
   }
   66% {
-    background-image: linear-gradient(to right, rgb(0, 128, 117), blue);
+    background-image: linear-gradient(
+      to top,
+      #3b41c5 0%,
+      #a981bb 49%,
+      #ffc8a9 100%
+    );
   }
   100% {
-    background-image: linear-gradient(
-      to right,
-      rgb(46, 45, 45),
-      rgb(255, 0, 255)
-    );
+    background-image: linear-gradient(to right, #ed6ea0 0%, #ec8c69 100%);
   }
 }

@@ -1,6 +1,4 @@
 const spinTheReels = () => {
-  console.log("girar");
-
   let spinner1 = document.getElementById("reel1");
   let spinner2 = document.getElementById("reel2");
   let spinner3 = document.getElementById("reel3");
@@ -86,7 +84,7 @@ const obtenerNumeroRandom = () => {
   const posiblesResultados = [
     "-35",
     "-70",
-    "-100",
+    "-105",
     "-135",
     "-170",
     "-205",
@@ -95,34 +93,6 @@ const obtenerNumeroRandom = () => {
     "-305",
     "-340",
     "-375",
-    // "-660",
-    // "-457.5",
-    // "-50",
-    // "-85",
-    // "-135",
-    // "-170",
-    // "-220",
-    // "-595",
-    // "-105",
-    // "-505",
-    // "-50",
-    // "-25",
-    // "-255",
-    // "-510",
-    // "-510",
-    // "-510",
-    // "-457.5",
-    // "-457.5",
-    // "-215",
-    // "-95",
-    // "-315",
-    // "-75",
-    // "-145",
-    // "-140",
-    // "-640",
-    // "-235",
-    // "-230",
-    // "-85",
   ];
 
   return posiblesResultados[
